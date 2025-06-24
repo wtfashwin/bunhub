@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: "liga", "kern";
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    line-height: 1.7;
+    color: #3b3b3b;
+  }
+
+  body {
+    @apply bg-[#f9fafb] text-[#1f2937] tracking-tight text-base;
+  }
+
+  a {
+    @apply transition duration-300 text-blue-600 hover:text-blue-800 underline-offset-2;
+  }
+
+  button {
+    @apply transition-all duration-200 ease-in-out;
+  }
+}
+
+/* Components – elegant card-like UI */
+@layer components {
+  .card {
+    @apply bg-white shadow-md rounded-xl p-6 border border-gray-100 hover:shadow-lg transition-shadow duration-300;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-blue-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300 transition;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-700 hover:bg-gray-200 rounded px-4 py-2;
+  }
+
+  .input {
+    @apply border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-200;
+  }
+
+  .section {
+    @apply max-w-6xl mx-auto px-6 py-10;
+  }
+
+  .title-lg {
+    @apply text-3xl font-bold mb-2 text-gray-900;
+  }
+
+  .title-sm {
+    @apply text-xl font-semibold mb-1 text-gray-800;
+  }
+
+  .text-muted {
+    @apply text-gray-500 text-sm;
+  }
+}
+
+/* Micro Interactions – subtle, intentional */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.5s ease-out both;
+}
+
+.hover-translate {
+  transition: transform 0.2s ease;
+}
+.hover-translate:hover {
+  transform: translateY(-2px);
+}
+
+:root {
+  --bg: #0f172a;              /* deep navy */
+  --bg-light: #1e293b;        /* for cards */
+  --text-primary: #f1f5f9;    /* light gray */
+  --text-secondary: #cbd5e1;  /* muted gray */
+  --accent: #38bdf8;          /* icy blue */
+  --accent-hover: #0ea5e9;    /* vibrant hover state */
+  --card-bg: #1e293b;
+  --radius: 0.75rem;
+  --transition: 300ms ease;
+    --shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px -5px, rgba(0, 0, 0, 0.04) 0px 4px 6px -2px;
+    --shadow-hover: rgba(0, 0, 0, 0.15) 0px 20px 40px -5px, rgba(0, 0, 0, 0.05) 0px 8px 10px -2px;
+    --shadow-card: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    
+}

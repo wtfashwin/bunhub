@@ -1,0 +1,5 @@
+entrypoints = ["src/index.tsx"]
+outdir = "dist"
+target = "browser"
+minify = true
+external = ["react", "react-dom"]  # Skip CDN-supplied modules
