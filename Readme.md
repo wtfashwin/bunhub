@@ -1,99 +1,81 @@
-Here’s a professional and crisp `README.md` for your **BunHub** project — optimized for showcasing on GitHub, sharing on LinkedIn, and impressing reviewers at Bun:
+BunHub: Real-time GitHub Explorer
+BunHub is a blazing-fast full-stack application for real-time GitHub repository and developer search, plus live notifications. Built with 💛 using Bun, TypeScript, and React.
 
----
+🚀 Features
+ Real-time GitHub Search: Instantly find repositories and users.
 
-```md
-# 🔍 BunHub — Real-Time GitHub Explorer Powered by Bun
+ Trending Repositories: Cached access to top GitHub projects.
 
-BunHub is a blazing-fast full-stack application that lets users search GitHub repositories, developers, and stream live GitHub notifications — built with 💛 using **Bun**, **TypeScript**, and **React**.
+ Live Notifications: Real-time activity feed via WebSockets.
 
-![BunHub Preview](./assets/preview.png)
+ Dark Mode: Adjustable theme preference.
 
----
+ Admin Dashboard: View API usage statistics (SQLite-powered).
 
-## 🚀 Features
+🛠️ Stack
+Layer
 
-- 🔎 **Real-time GitHub Search** – Stream results for repositories and users with lightning speed
-- 🧠 **Trending Repositories** – View GitHub's top projects using cached API calls
-- 🧑‍💻 **Live Notifications** – Real-time activity feed via WebSockets (WSS)
-- 🌙 **Dark Mode Intensity Slider** – Adjust theme based on system or custom preference
-- 📈 **Internal Admin Dashboard** – View API usage stats powered by SQLite
+Tech Used
 
----
+Frontend
 
-## 🛠️ Stack
+React 19, TailwindCSS, TypeScript
 
-| Layer        | Tech Used                          |
-|--------------|------------------------------------|
-| Frontend     | React 19, TailwindCSS, TypeScript  |
-| Backend      | Bun (v1.2+), WebSocket Server       |
-| Real-time    | WSS (WebSocket), Bun's native API  |
-| Persistence  | SQLite for analytics               |
-| Dev Tools    | Vite, Bunx, ESLint, TypeScript     |
+Backend
 
----
+Bun (v1.2+), WebSocket Server
 
-## 📦 Project Structure
+Real-time
 
-```
+WSS (WebSocket), Bun's native API
 
-/
-├── bunhub/               # React frontend
-├── server.ts             # Bun backend with WSS and static serving
-├── analytics.sqlite      # Local DB for tracking API events
-├── public/dist/          # Bundled frontend files
+Persistence
+
+SQLite for analytics
+
+Dev Tools
+
+Vite, Bunx, ESLint, TypeScript
+
+📦 Project Structure
+
+├── bunhub/                 # React frontend
+├── server.ts               # Bun backend with WSS and static serving
+├── analytics.sqlite        # Local DB for tracking API events
+├── public/dist/            # Bundled frontend files
 ├── README.md
 └── ...
 
-````
+⚡ Getting Started
+Quickly set up BunHub:
 
----
-
-## ⚡ Getting Started
-
-### 1. Clone & Install
-```bash
+1. Clone & Install
 git clone https://github.com/your-username/bunhub.git
 cd bunhub
 bun install
-````
 
-### 2. Start the Frontend
-
-```bash
+2. Start Frontend
 bunx vite
-```
 
-### 3. Start the Backend
-
-```bash
+3. Start Backend
 cd ..
 bun server.ts
-```
 
-Visit: [http://localhost:3001](http://localhost:3001)
+Access at: http://localhost:3001
 
----
+🧩 Roadmap
+[ ] GitHub OAuth Login
 
-## 🧩 Roadmap
+[ ] Real-time repo issue tracking
 
-* [ ] GitHub OAuth Login
-* [ ] Real-time repo issue tracking
-* [ ] AI-powered repo summaries
-* [ ] GitHub GraphQL v4 integration
-* [ ] Deploy on Bun Edge Runtime
+[ ] AI-powered repo summaries
 
----
+[ ] GitHub GraphQL v4 integration
 
-## 🤝 Contributing
+[ ] Deploy on Bun Edge Runtime
 
+🤝 Contributing
 PRs and stars are welcome. If you have suggestions, issues, or ideas — open one!
 
----
-
-## 🔒 License
-
-MIT © [Ashwin Upadhyay](https://github.com/wtfashwin)
-
-```
-
+🔒 License
+MIT © Ashwin Upadhyay
