@@ -38,7 +38,7 @@ Dev Tools
 Vite, Bunx, ESLint, TypeScript
 
 📦 Project Structure
-
+/
 ├── bunhub/                 # React frontend
 ├── server.ts               # Bun backend with WSS and static serving
 ├── analytics.sqlite        # Local DB for tracking API events
