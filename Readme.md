@@ -1,3 +1,7 @@
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/10912/badge)](https://www.bestpractices.dev/projects/10912)
+or by embedding this in your HTML:
+<a href="https://www.bestpractices.dev/projects/10912"><img src="https://www.bestpractices.dev/projects/10912/badge"></a>
+
 BunHub: Real-time GitHub Explorer
 BunHub is a blazing-fast full-stack application for real-time GitHub repository and developer search, plus live notifications. Built with 💛 using Bun, TypeScript, and React.
 
